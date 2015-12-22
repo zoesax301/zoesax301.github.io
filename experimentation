@@ -1,6 +1,0 @@
-> (define (rainbow p)
-  (map (lambda (color)
-         (colorize p color))
-       (list "red" "orange" "yellow" "green" "blue" "purple")))
-> (rainbow (circle 50))
-> (colorize (circle 50) "brown")
