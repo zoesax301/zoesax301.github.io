@@ -7,9 +7,9 @@
  */
 
 html {
-  font-family: sans-serif; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -ms-text-size-adjust: 100%; /* 2 */
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 /**
@@ -254,9 +254,9 @@ input,
 optgroup,
 select,
 textarea {
-  margin: 0; /* 3 */
-  font: inherit; /* 2 */
-  color: inherit; /* 1 */
+  margin: 0;
+  font: inherit;
+  color: inherit;
 }
 
 /**
@@ -288,12 +288,12 @@ select {
  */
 
 button,
-html input[type="button"], /* 1 */
+html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button; /* 2 */
   cursor: pointer; /* 3 */
-}
+} */
 
 /**
  * Re-set default cursor for disabled elements.
@@ -333,8 +333,8 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+  box-sizing: border-box;
+  padding: 0;
 }
 
 /**
@@ -358,7 +358,7 @@ input[type="search"] {
   -webkit-box-sizing: content-box; /* 2 */
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  -webkit-appearance: textfield; /* 1 */
+  -webkit-appearance: textfield;
 }
 
 /**
@@ -388,8 +388,8 @@ fieldset {
  */
 
 legend {
-  padding: 0; /* 2 */
-  border: 0; /* 1 */
+  padding: 0;
+  border: 0;
 }
 
 /**
@@ -516,7 +516,23 @@ aside#sidebar p.repo-owner a {
   margin-bottom: 40px;
 }
 
-a.button {
+.box {
+  float: right;
+  display:inline-block;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  display:inline-block;
+  position: relative;
+  width: 70%;
+  height: 75%
+}
+
+/* a.button {
   width: 134px;
   height: 58px;
   padding-top: 22px;
@@ -525,25 +541,25 @@ a.button {
   font-size: 23px;
   line-height: 1.2;
   color: #fff;
+  display:inline-block;
 }
 a.button small {
   display: block;
   font-size: 11px;
 }
 header a.button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: transparent url(../images/github-button.png) 0 0 no-repeat;
-}
-aside a.button {
-  display: block;
-  width: 138px;
-  padding-left: 64px;
-  margin-bottom: 20px;
-  font-size: 21px;
-  background: transparent url(../images/download-button.png) 0 0 no-repeat;
-}
+  float: right;
+  display:inline-block;
+  /* background: transparent 0 0 no-repeat; */
+  /* outline: none;
+  border: 2px solid white;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  display:inline-block;
+} */
 
 code, pre {
   margin-bottom: 30px;
@@ -871,11 +887,10 @@ footer a:hover {
     margin-left: 0;
     content: none;
   }
-}
+
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) { }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) { }
-
