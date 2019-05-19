@@ -293,7 +293,7 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button; /* 2 */
   cursor: pointer; /* 3 */
-} */
+}
 
 /**
  * Re-set default cursor for disabled elements.
@@ -541,7 +541,7 @@ header h2 {
   margin-bottom: 40px;
 }
 
-.box {
+/* .box {
   float: right;
   display:inline-block;
   border: 2px solid white;
@@ -553,8 +553,37 @@ header h2 {
   outline:none;
   display:inline-block;
   position: relative;
-  width: 30%;
-  height: 65%
+  width: 70%;
+  height: 75%
+} */
+
+a.button {
+  width: 134px;
+  height: 58px;
+  padding-top: 22px;
+  padding-left: 68px;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 23px;
+  line-height: 1.2;
+  color: #fff;
+}
+a.button small {
+  display: block;
+  font-size: 11px;
+}
+header a.button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent url(../images/github-button.png) 0 0 no-repeat;
+}
+aside a.button {
+  display: block;
+  width: 138px;
+  padding-left: 64px;
+  margin-bottom: 20px;
+  font-size: 21px;
+  background: transparent url(../images/download-button.png) 0 0 no-repeat;
 }
 
 code, pre {
