@@ -541,7 +541,7 @@ header h2 {
   margin-bottom: 40px;
 }
 
-/* .box {
+.box {
   float: right;
   display:inline-block;
   border: 2px solid white;
@@ -555,7 +555,7 @@ header h2 {
   position: relative;
   width: 70%;
   height: 75%
-} */
+}
 
 a.button {
   width: 134px;
