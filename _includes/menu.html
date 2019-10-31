@@ -1,0 +1,15 @@
+<div class="sidebar">
+    {% assign sorted_pages = site.pages | where_exp: "item", "item.order" | sort: "order" | shift %}
+
+    {% for node in sorted_pages %}
+      {% if page.url == node.url or node.url contains page.collection and page.collection != null %}
+        {% assign active = 'active' %}
+      {% else %}
+        {% assign active = nil %}
+      {% endif %}
+
+      <a class="{{ active }}" href="{{ site.baseurl }}{{ node.url }}">{{node.title}}</a>
+    {% endfor %}
+
+
+</div>
