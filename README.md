@@ -15,4 +15,4 @@ bundle install
 jekyll serve
 ```
 
-Images may not show up properly while running locally, because they hard-code the name of the GitHub repo (`zoesax301.github.io`) into the links. This is because it is hosted as an additional site on my normal GitHub site, hence the URL becoming https://emma-sax4.github.io/_zoesax301.github.io_.
+Images may not show up properly while running locally, because they hard-code the name of the GitHub repo (`zoesax301.github.io`) into the links. This is because it is hosted as an additional site on my normal GitHub site, hence the URL becoming <code>https://emma-sax4.github.io/<i>zoesax301.github.io</i></code>.
